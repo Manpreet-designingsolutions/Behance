@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+
+@media (min-width:1240px)
+{
+    .search-container{
+        width:100%;
+    }
+    .sidebar-icon{
+        display: none;
+    }
+    .bell-filled-icon{
+        display: none;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media(max-width:1024px)
+{
+    .footer-container{
+        flex:1;
+    }
+    .footer-up-container{
+        justify-content: center;
+        align-items: end;
+        display: flex;
+        flex-wrap: wrap;
+    }
+      .navbar-container,a{
+        display: none;
+    }
+    .side-navbar-container-1{
+        display: none;
+    }
+    .side-navbar-container-2{
+        display: none;
+    }
+   .select-navbar{
+    display: none;
+   }
+    .footer-container-2{
+        display:flex;
+        flex-direction: row; 
+        gap:45px;
+    }
+    .search-container{
+        width:100%;
+    }
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@media(max-width:768px)
+{
+    .navbar-container,select,a{
+        display: none;
+    }
+    .side-navbar-container-1{
+        display: none;
+    }
+    .side-navbar-container-2{
+        display: none;
+    }
+    .recommended-container{
+        display: none;
+    }
+    .main-footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media(max-width:425px)
+{
+    .search-container{
+        width: 390px;
+        padding:12px
+    }
+    .image-container{
+        display: none;
+    }
+     .header-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
+     .footer-container{
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer-header{
+        text-align: center;
+    }
+    .footer-container-2{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        align-items: center;
+        margin-left: '10%';
+    }
+    .footer-up-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width:375px){
+    .filter-button{
+        width:350px;
+    }
+    .search-container{
+        width:330px;
+    }
 }
